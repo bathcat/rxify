@@ -2,12 +2,16 @@
   "name": "rxify",
   "version": "1.0.0",
   "description": "Small library for converting promise-based APIs into observable ones.",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
   "author": "",
   "license": "ISC",
+  "main": "dist/index.js",
+  "types":"dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build":"tsc",
+    "prepare":"tsc"
+  },
+  "files": ["/dist"],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
