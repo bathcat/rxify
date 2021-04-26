@@ -16,12 +16,6 @@ interface User{
   name:string;
 }
 
-interface Department{
-  name:string;
-  state:string;
-  address:string;
-}
-
 const api = {
   getUser(id:number):Promise<User>{
     return new Promise((resolve)=>{
